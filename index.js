@@ -8,7 +8,7 @@ const cwd = process.cwd();
 const eof = require('os').EOL
 const fastInstall = require('fast-install')
 
-glob(path.join(cwd, 'src', '**', '*.js'), {ignore: ['**/node_modules/**']}, (err, files) => {
+glob(path.join(cwd, '{src,test}', '**', '*.js'), {ignore: ['**/node_modules/**']}, (err, files) => {
   if (err) throw err
 
   files.forEach(filePath => {
