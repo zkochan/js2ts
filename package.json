@@ -1,0 +1,16 @@
+{
+  "name": "js2ts",
+  "version": "1.0.0",
+  "description": "Converts a JavaScript project into a TypeScript project",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "lebab": "^2.6.1"
+  }
+}
