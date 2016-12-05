@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 const lebab = require('lebab')
 const glob = require('glob')
@@ -5,6 +6,7 @@ const fs = require('fs')
 const path = require('path')
 const cwd = process.cwd();
 const eof = require('os').EOL
+const fastInstall = require('fast-install')
 
 glob(path.join(cwd, 'src', '**', '*.js'), {ignore: ['**/node_modules/**']}, (err, files) => {
   if (err) throw err
@@ -49,3 +51,8 @@ pkg.scripts = Object.assign({}, pkg.scripts, {
 })
 
 fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + eof, 'UTF8')
+
+fastInstall({
+  dependencies: 'typescript@next',
+  cliOptions: '-D -E'
+})
