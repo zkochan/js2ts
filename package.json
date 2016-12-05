@@ -1,6 +1,6 @@
 {
   "name": "js2ts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Converts a JavaScript project into a TypeScript project",
   "main": "index.js",
   "bin": "index.js",
