@@ -10,7 +10,7 @@
   "author": "Zoltan Kochan",
   "license": "MIT",
   "dependencies": {
-    "fast-install": "^1.0.0",
+    "fast-install": "^1.0.1",
     "glob": "^7.1.1",
     "lebab": "^2.6.1"
   }
