@@ -12,6 +12,6 @@
   "dependencies": {
     "fast-install": "^1.0.0",
     "glob": "^7.1.1",
-    "lebab": "^2.6.1"
+    "lebab": "^2.7.7"
   }
 }
